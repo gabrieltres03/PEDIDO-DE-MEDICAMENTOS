@@ -627,8 +627,9 @@ function exportarExcel() {
   XLSX.utils.book_append_sheet(wb, ws, 'Pedidos');
 
   const hoje = new Date().toISOString().slice(0,10);
-  XLSX.writeFile(wb, `pedidos_whatsapp_${hoje}.xlsx`);
+  XLSX.writeFile(wb, `pedidos_whatsapp.xlsx`);
 }
 </script>
 </body>
+
 </html>
